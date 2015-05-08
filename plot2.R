@@ -1,3 +1,4 @@
+Sys.setlocale("LC_TIME", "English")
 monitorDataPath <- "../data/household_power_consumption.txt"
 monitorData <- read.table( monitorDataPath , header=TRUE, sep=";", stringsAsFactors=FALSE, dec=".")
 subSet <- monitorData[monitorData$Date %in% c("1/2/2007","2/2/2007") ,]
